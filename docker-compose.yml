@@ -72,6 +72,8 @@ services:
       - './/data/elasticsearch:/usr/share/elasticsearch/data'
     environment:
       - bootstrap.memory_lock=true
+    ports:
+      - 9200:9200
     ulimits:
       memlock:
         soft: -1
